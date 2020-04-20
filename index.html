@@ -91,6 +91,9 @@ body {
 
 .row {
   margin: 2px -16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /* Add padding BETWEEN each column */
@@ -103,9 +106,6 @@ body {
 .column {
   float: left;
   width: 25%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   display: none; /* Hide all elements by default */
 }
 
