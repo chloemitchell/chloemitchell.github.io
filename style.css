@@ -38,10 +38,7 @@ li a:hover {
 }
 
 .banner {
- top: 10px;
- left: 0px;
- right: 0px;
- width: 100%;
+ position: fixed;
 }
 
 .fa {
@@ -61,7 +58,7 @@ li a:hover {
 
 /* FONTS */
 h1 {font-family: "Heebo"; font-weight: 100; font-size: 20px; text-align: center; letter-spacing: 3px;} /*recent posts*/
-h2 {font-family: "PT Serif", serif; font-weight: normal; text-decoration: none; font-size: 18px; text-align: left; text-decoration: none} /*post title*/
+h2 {font-family: "PT Serif", serif; font-weight: normal; font-size: 18px; text-align: left; text-decoration: none} /*post title*/
 h3 {font-family: "Heebo"; font-weight: 100; font-size: 12px; text-align: center; letter-spacing: 1px;} /*footer*/
 
 body {
@@ -71,11 +68,8 @@ body {
   font-size: 15px;
   text-decoration: none;
 }
-h2 a:hover {
-  opacity: 0.8;
-}
 
-.img a:hover {
+.img :hover {
   opacity: 0.8 
 }
 
@@ -86,7 +80,7 @@ h2 a:hover {
 }
 
 .row {
-  margin: 10px -16px;
+  margin: 2px -16px;
 }
 
 /* Add padding BETWEEN each column */
@@ -98,7 +92,7 @@ h2 a:hover {
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  width: 33%;
+  width: 33.33%;
   display: none; /* Hide all elements by default */
 }
 
