@@ -1,7 +1,6 @@
 <html>
 <head>
 <style>
-<style>
 * {
   box-sizing: border-box;
 }
@@ -167,14 +166,12 @@ font-size: 15px;
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
+  .column {width: 100%;}
 	h1 {font-size: 30px;}
 	h2 {font-size: 18px;}
 	h3 {font-size: 10px;}
 	body {font-size: 16px;}
   }
-</style>
 </style>
 </head>
 </html>
