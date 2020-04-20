@@ -1,165 +1,324 @@
 <!DOCTYPE html>
 <html>
-<meta charset="UTF-8">
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cedarville%20Cursive">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT%20Serif">
-<title>🍉 somewherebythesea</title>
-	<style>
-		h1 {font-family: "Cedarville Cursive", sans-serif; font-size: 44px; text-align: center;}
-		h2 {font-family: "Arial", sans-serif; font-size: 10px; text-align: center; letter-spacing: 3px;}
-		h3 {font-family: "Cedarville Cursive", sans-serif; font-size: 32px; text-align: center;}
-		h4 {font-family: "PT Serif", serif; font-size: 20px; text-align: left; text-decoration: none}
-		h5 {font-family: "PT Serif", serif; font-size: 15px; text-align: left; text-decoration: none}
-		h6 {font-family: "Arial", sans-serif; font-size: 12px; text-align: center; letter-spacing: 1px;}
-		h7 {font-family: "Cedarville Cursive", sans-serif; font-size: 25px; text-align: center;}
-		body {font-family: "PT Serif", serif; font-size: 15px; text-align: center; text-decoration: none;}
-		.w3-bar-block .w3-bar-item {padding:20px; text-decoration: none;}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-		.navbar {
-		  z-index: 9999;
-		  background-color: #333;
-		  position: fixed;
-		  top: 0;
-		  width: 100%;
-		}
+ul {
+  font-family: "Heebo";
+  font-size: 15px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
 
-		.navbar a {
-		  float: right;
-		  display: block;
-		  color: #fff;
-		  text-align: center;
-		  padding: 5px 13px;
-		  text-decoration: none;
-		  font-size: 15px;
-		}
+li {
+  float: right;
+}
 
-		.navbar a:hover {
-		  background: #ffb8b8;
-		  color: #fff;
-		}
-		
-		a:hover {
-		  color: #ffb8b8;
-		}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8px 15px;
+  text-decoration: none;
+}
 
-		.container {
-		  position: relative;
-		  text-align: left;
-		  text-decoration: none;
-		  color: white;
-		}
-		
-		.banner {
-		  position: relative;
-		  text-decoration: none;
-		  color: white;
-		}
-		
-		.centered {
-		  position: absolute;
-		  top: 50%;
-		  left: 50%;
-		  transform: translate(-50%, -50%);
-		  padding: 0;
-		  margin: 0;
-		  }
+li a:hover {
+  background-color: #b8d4d6;
+}
 
-		.photo :hover {
-		  opacity: 0.8;
-		}
-		
-		@media screen and (max-width: 1024px) {
-		.container {flex-direction: column; padding-left: 80px; padding-right: 80px;}
-		h1 {font-size: 36px;}
-		h2 {font-size: 9px;}
-		h3 {font-size: 30px;}
-		h4 {font-size: 18px;}
-		h5 {font-size: 15px;}
-		h6 {font-size: 13px;}
-		body {font-size: 16px;}
-		}
-		
-		@media screen and (max-width: 600px) {
-		.container {flex-direction: column; padding-left: 80px; padding-right: 80px;}
-		.navbar a {font-size: 15px;}
-		h1 {font-size: 34px;}
-		h2 {font-size: 8px;}
-		h3 {font-size: 30px;}
-		h4 {font-size: 18px; font-weight: bold}
-		h5 {font-size: 16px;}
-		h6 {font-size: 12px;}
-		body {font-size: 16px;}
-		}
-	</style>
+.banner {
+ position: fixed;
+}
+
+.fa {
+  padding: 12px;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  border-radius: 100%;
+  background: #b8d4d6;
+}
+
+.fa:hover {
+  opacity: 0.6;
+  }
+
+/* FONTS */
+h1 {font-family: "Heebo"; font-weight: 100; font-size: 20px; text-align: center; letter-spacing: 3px;} /*recent posts*/
+h2 {font-family: "PT Serif", serif; font-weight: normal; font-size: 18px; text-align: left; text-decoration: none} /*post title*/
+h3 {font-family: "Heebo"; font-weight: 100; font-size: 12px; text-align: center; letter-spacing: 1px;} /*footer*/
+
+body {
+  background-color: #ffffff;
+  padding: 20px;
+  font-family: "PT Serif";
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.img :hover {
+  opacity: 0.8 
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.row {
+  margin: 2px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: #f7f7f7;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+font-family: "Heebo";
+font-size: 15px;
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #f7f7f7;
+}
+
+.btn.active {
+  background-color: #b8d4d6;
+  color: white;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #b8d4d6; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 100%; /* Rounded corners */
+  font-size: 22px; /* Increase font size */
+}
+
+#myBtn:hover {
+  opacity: 0.6;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+	h1 {font-size: 30px;}
+	h2 {font-size: 18px;}
+	h3 {font-size: 10px;}
+	body {font-size: 16px;}
+  }
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
 
 <!-- NavBar -->
-<div class="navbar">
-  <a href="\index">Misc</a>
-  <a href="\crafts">Crafts</a>
-  <a href="\travel">Travel</a>
-  <a href="\recipes">Recipes</a>
-  <a href="\about2">About</a>
-  <a href="\index">Home</a>
-</div>
+<ul>
+  <li><a href="\contact.html">Contact</a></li>
+  <li><a href="\About.html">About</a></li>
+  <li><a href="\index.html">Home</a></li>
+</ul>
 
+<!-- Banner -->
 <div class="banner">
 	<picture>
 	  <source srcset="\images\banner1.jpg" media="(max-width: 600px)">
 	  <source srcset="\images\banner2.jpg">
 	  <img src="\images\banner2.jpg" style="width:100%;">
 	</picture>
-	<div class="centered"><h1>somewhere&nbsp;by&nbsp;the&nbsp;sea</h1><h2>A&nbsp;LIFESTYLE&nbsp;BLOG&nbsp;BY&nbsp;CHLOE&nbsp;MITCHELL</h2></div>
 </div>
-  
-	<h3>recent posts</h3>
-	<img src="\images\watermelon.jpg"  style="width:36px; height:30px;"/>
-	
-<!-- !PAGE CONTENT! -->
-<body>
-	<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:10px">
+<br />
 
-	  <!-- First Photo Grid-->
-	  <div class="w3-row-padding w3-padding-16 w3-center">
-		<div class="w3-quarter" style="background-color: #f7f7f7">
-		  <div class="photo"><a href="/blogpost3.html"><img src="\images\blogpost3\cover.jpg" style="width: 100%;"></a></div>
-		  <h4>No bake easy-to-make mini Malteser cheesecakes</h4>
-		  <h5>No calories - I promise. So good you'll want to make them twice.</h5>
-		</div>
-		<br>
-		<br>
-		 <div class="w3-quarter" style="background-color: #f7f7f7";>
-		  <div class="photo"><a href="/blogpost2.html"><img src="\images\blogpost2\cover.jpg" style="width: 100%; padding-top: 10px;"></a></div>
-		  <h4>Embroidery for absolute beginners</h4>
-		  <h5>Brighten up your bedroom and keep yourself busy for a few hours.</h5>
-		</div>
-		<br>
-		<br>
-		 <div class="w3-quarter" style="background-color: #f7f7f7">
-		  <div class="photo"><a href="/blogpost1.html"><img src="\images\blogpost1\cover.jpg" style="width: 100%;"></a></div>
-		  <h4>Morning Campers! Tips from a full time tent-dweller</h4>
-		  <h5>What happens when you switch normal life for the simplicity of living in a tent.</h5>
-		</div>
-	
-	  </div>
-	  
-	  <!-- Pagination -->
-	  <div class="w3-center w3-padding-32">
-		<div class="w3-bar">
-		  <a href="/index.html" class="w3-bar-item w3-button w3-hover-black">«</a>
-		  <a href="/index.html" class="w3-bar-item w3-black w3-button">1</a>
-		  <a href="/index.html" class="w3-bar-item w3-button w3-hover-black">»</a>
-		</div>
-	</div>
+<div class="main">
+
+<h1>RECENT POSTS
+<br /><img src="/images/underline.jpg" style="width:100%"></h1>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')">All</button>
+  <button class="btn" onclick="filterSelection('crafts')">Crafts</button>
+  <button class="btn" onclick="filterSelection('recipes')">Recipes</button>
+  <button class="btn" onclick="filterSelection('travel')">Travel</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column recipes">
+    <div class="content">
+      <img src="/images/blogpost3/cover.jpg" alt="cheesecake" style="width:100%">
+      <h2>Mountains</h2>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
   
-	<!-- Footer -->
-		<a href="https://instagram.com/chloemitch_/" class="fa fa-instagram" style="font-size:22px; text-decoration: none;"></a> 
-		<!--&nbsp;|&nbsp;
-		<a href="/comingsoon" style="font-size:20px; font-family:times new roman; text-decoration: none">Etsy.</a>-->
-		<br><h7>...thanks for visiting</h7><br>
-		<h6>Theme: <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
-		<br> &copy; Chloe Mitchell 2020</h6>
+  <div class="column crafts">
+    <div class="content">
+      <img src="/images/blogpost2/cover.jpg" alt="embroidery" style="width:100%">
+      <h2>Retro</h2>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column travel">
+    <div class="content">
+      <img src="/images/blogpost1/cover.jpg" alt="camping" style="width:100%">
+      <h2>Girl</h2>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- Back to top button -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">&nbsp;↑&nbsp;</button>
+
+<!-- Footer -->
+<br />
+<!--&nbsp;|&nbsp;
+<a href="/comingsoon" style="font-size:20px; font-family:times new roman; text-decoration: none">Etsy.</a>-->
+<h3>
+<img src="/images/thanks.jpg" alt="thanks" style="width:100%">
+<br />
+<a href="https://instagram.com/chloemitch_/" class="fa fa-instagram"></a>
+<br />
+<br/ >Theme: <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+<br /> &copy; Chloe Mitchell 2020</h3>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
 </body>
 </html>
