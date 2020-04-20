@@ -41,7 +41,7 @@ li a:hover {
   background-color: #b8d4d6;
 }
 
-.banner {
+.banner picture {
  position: static;
  padding: 0;
  width: 100%;
@@ -191,9 +191,11 @@ body {
 
 <!-- Banner -->
 <div class="banner">
-	  <source srcset="\images\banner1.jpg" media="(max-width: 600px)">
-	  <source srcset="\images\banner2.jpg">
-	  <img src="\images\banner2.jpg" width="100%">
+<picture>
+  <source srcset="\images\banner1.jpg" media="(max-width: 600px)" style="width: 100%;">
+  <source srcset="\images\banner2.jpg"  style="width: 100%;">
+  <img src="\images\banner2.jpg" width="100%">
+</picture>
 </div>
 <br />
 
