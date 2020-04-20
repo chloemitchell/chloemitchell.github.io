@@ -71,8 +71,11 @@ body {
   font-size: 15px;
   text-decoration: none;
 }
+h2 a:hover {
+  opacity: 0.8;
+}
 
-.img :hover {
+.img a:hover {
   opacity: 0.8 
 }
 
