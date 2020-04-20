@@ -5,7 +5,6 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT%20Serif">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
 <style>
 * {
   box-sizing: border-box;
@@ -43,11 +42,7 @@ li a:hover {
 }
 
 .banner {
- width: 100%;
- padding: 0;
- margin: 0;
- top: 0;
- left: 0;
+ position: fixed;
 }
 
 .fa {
@@ -78,24 +73,31 @@ body {
   text-decoration: none;
 }
 
-.img a:hover {
+.img :hover {
   opacity: 0.8 
 }
 
 /* Center website */
 .main {
-  max-width: 1400px;
-  margin: 0;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .row {
-  margin: 2px 0px;
+  margin: 2px -16px;
 }
 
 /* Add padding BETWEEN each column */
 .row,
 .row > .column {
   padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
 }
 
 /* Clear floats after rows */ 
@@ -156,13 +158,6 @@ font-size: 15px;
   opacity: 0.6;
 }
 
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 32%;
-  display: none; /* Hide all elements by default */
-}
-
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) {
   .column {
@@ -172,13 +167,15 @@ font-size: 15px;
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column {width: 100%;}
+  .column {
+    width: 100%;
 	h1 {font-size: 30px;}
 	h2 {font-size: 18px;}
 	h3 {font-size: 10px;}
 	body {font-size: 16px;}
   }
 </style>
+</head>
 <body>
 
 <!-- MAIN (Center website) -->
@@ -203,7 +200,7 @@ font-size: 15px;
 <div class="main">
 
 <h1>RECENT POSTS
-<br /><img src="/images/underline.jpg" style="width:70px"></h1>
+<br /><img src="/images/underline.jpg" style="width:100%"></h1>
 
 <div id="myBtnContainer">
   <button class="btn active" onclick="filterSelection('all')">All</button>
@@ -214,14 +211,6 @@ font-size: 15px;
 
 <!-- Portfolio Gallery Grid -->
 <div class="row">
-  <div class="column recipes">
-    <div class="content">
-      <img src="/images/blogpost3/cover.jpg" alt="cheesecake" style="width:100%">
-      <h2>Mountains</h2>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  
   <div class="column recipes">
     <div class="content">
       <img src="/images/blogpost3/cover.jpg" alt="cheesecake" style="width:100%">
@@ -256,7 +245,7 @@ font-size: 15px;
 <!--&nbsp;|&nbsp;
 <a href="/comingsoon" style="font-size:20px; font-family:times new roman; text-decoration: none">Etsy.</a>-->
 <h3>
-<img src="/images/thanks.jpg" alt="thanks" style="width:200px">
+<img src="/images/thanks.jpg" alt="thanks" style="width:100%">
 <br />
 <a href="https://instagram.com/chloemitch_/" class="fa fa-instagram"></a>
 <br />
