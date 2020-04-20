@@ -38,7 +38,8 @@ li a:hover {
 }
 
 .banner {
- position: fixed;
+ top: 10px;
+ left: 0px;
 }
 
 .fa {
