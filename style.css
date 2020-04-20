@@ -72,7 +72,7 @@ body {
   text-decoration: none;
 }
 
-.img :hover {
+.img a:hover {
   opacity: 0.8 
 }
 
@@ -83,7 +83,7 @@ body {
 }
 
 .row {
-  margin: 2px -16px;
+  margin: 2px 0px;
 }
 
 /* Add padding BETWEEN each column */
