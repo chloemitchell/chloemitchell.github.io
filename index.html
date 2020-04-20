@@ -106,7 +106,9 @@ body {
 .column {
   float: left;
   width: 25%;
+  overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
   display: none; /* Hide all elements by default */
 }
 
@@ -251,7 +253,7 @@ body {
 </div>
 
 <!-- Back to top button -->
-<button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
+<button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
 
 <!-- Footer -->
 <br />
