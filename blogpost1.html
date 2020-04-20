@@ -1,104 +1,131 @@
 <!DOCTYPE html>
 <html>
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cedarville%20Cursive">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT%20Serif">
-<title>🍉 somewherebythesea</title>
-	<style>
-		h1 {font-family: "PT Serif", serif; font-size: 25px; text-align: left; text-decoration: none;}
-		h2 {font-family: "Arial", sans-serif; font-size: 10px; text-align: left; letter-spacing: 3px;}
-		h3 {font-family: "PT Serif", serif; font-size: 16px; text-align: left; text-decoration: none}
-		h4 {font-family: "Cedarville Cursive", sans-serif; font-size: 20px; text-align: center;}
-		h5 {font-family: "Arial", sans-serif; font-size: 12px; text-align: center; letter-spacing: 1px;}
-		body {font-family: "PT Serif", serif; font-size: 15px; text-align: center; text-decoration: none;}
-		.w3-bar-block .w3-bar-item {padding:20px; text-decoration: none;}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>somewherebythesea 🌊</title>
+<style>
+* {
+  box-sizing: border-box;
+}
 
-		.navbar {
-		  z-index: 9999;
-		  background-color: #333;
-		  position: fixed;
-		  top: 0;
-		  width: 100%;
-		}
+ul {
+  font-family: "Heebo";
+  font-size: 15px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
 
-		.navbar a {
-		  float: right;
-		  display: block;
-		  color: #fff;
-		  text-align: center;
-		  padding: 5px 13px;
-		  text-decoration: none;
-		  font-size: 15px;
-		}
-		
-		a:hover {
-		  color: #ffb8b8;
-		}
+li {
+  float: right;
+}
 
-		.navbar a:hover {
-		  background: #ffb8b8;
-		  color: #fff;
-		}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 6px 15px;
+  text-decoration: none;
+}
 
-		.container {
-		  position: relative;
-		  text-align: center;
-		  text-decoration: none;
-		  padding-left: 220px;
-		  padding-right: 220px;
-		}
-		
-		img {
-		display: block;
-		  margin-left: auto;
-		  margin-right: auto;
-		  width: 100%;
-		}
+li a:hover {
+  background-color: #b8d4d6;
+}
 
-		@media screen and (max-width: 1024px) {
-		.container {flex-direction: column; padding-left: 80px; padding-right: 80px;}
-		}
+.banner {
+ position: static;
+ padding-top: 20px;
+ margin: 0;
+ width: 100%;
+}
 
-		@media screen and (max-width: 600px) {
-		.container {flex-direction: column; padding-left: 30px; padding-right: 30px;}
-		.navbar a {font-size: 15px;}
-		h1 {font-size: 25px;}
-		h2 {font-size: 13px;}
-		h3 {font-size: 16px;}
-		h4 {font-size: 20px;}
-		h5 {font-size: 13px;}
-		body {font-size: 18px;}
-		}
-	</style>
+.fa {
+  padding: 12px;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  border-radius: 100%;
+  background: #b8d4d6;
+}
+
+.fa:hover {
+  opacity: 0.6;
+  }
+
+/* FONTS */
+h1 {font-family: "Heebo"; font-weight: 100; font-size: 20px; text-align: center; letter-spacing: 3px;} /*recent posts*/
+h2 {font-family: "PT Serif", serif; font-weight: normal; font-size: 18px; text-align: left; text-decoration: none} /*post title*/
+h3 {font-family: "Heebo"; font-weight: 100; font-size: 12px; text-align: center; letter-spacing: 1px;} /*footer*/
+h4 {font-family: "Heebo"; font-weight: 100; font-size: 9px; text-align: center; letter-spacing: 1px;} /*date time*/
+
+body {
+  background-color: #ffffff;
+  padding: 0px;
+  font-family: "PT Serif";
+  font-size: 15px;
+  text-decoration: none;
+  text-align: left;
+}
+
+/* Center website */
+.main {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 20px;
+  padding-left: 220px;
+  padding-right: 220px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .main {padding: 10px;}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .main {padding: 10px;}
+	h1 {font-size: 18px;}
+	h2 {font-size: 17px;}
+	h3 {font-size: 10px;}
+	h4 (font-size: 13px;}
+	body {font-size: 15px;}
+  }
+</style>
 
 <!-- NavBar -->
-
-	<div class="navbar">
-	  <a href="/index">Misc</a>
-	  <a href="/crafts">Crafts</a>
-	  <a href="/travel">Travel</a>
-	  <a href="/recipes">Recipes</a>
-	  <a href="/about">About</a>
-	  <a href="/index">Home</a>
-	</div>
+<ul>
+  <li><a href="\contact.html">Contact</a></li>
+  <li><a href="\about2.html">About</a></li>
+  <li><a href="\index.html">Home</a></li>
+</ul>
 	
 <!-- Page Content -->
-	<div class="container">
+	<div class="main">
 	<br>
 	<br>
-		<h1>Morning Campers! Advice from a full-time tent dweller...</h1>
-		<h2>30/03/2020 17:32<h2>
+		<h2>Morning Campers! Advice from a full-time tent dweller...</h2>
+		<h4>30/03/2020 17:32</h4>
 		<img src="\images\blogpost1\main.jpg"/>
-			<h3>Flashback to a Friday night in November of last year and you’ll find me and Joe sat arguing in an empty car park in Scotland. The subject? Whether it’d be better to go travelling in a van or a tent. After much deliberation, we decided that a tent was our best option, as it provided us more flexibility, space and leftover budget.
+			Flashback to a Friday night in November of last year and you’ll find me and Joe sat arguing in an empty car park in Scotland. The subject? Whether it’d be better to go travelling in a van or a tent. After much deliberation, we decided that a tent was our best option, as it provided us more flexibility, space and leftover budget.
 				<br>
 				<br>
 				We then spent £500 on this four-berth tent (more professionally known as the 'Vango 400XL'): 
 				<br>
 				<br>
-				<img src="\images\blogpost1\tent.jpg" style="width: 350px"/>
+				<h1><img src="\images\blogpost1\tent.jpg" style="width: 350px"/></h1>
 				<br>
 				We have spent the last four months travelling around around New Zealand together and living full-time in this new, makeshift home, and realised there were a lot of things we never considered whilst sat in that Scottish car park. So, I've compiled a list of the ups and downs of living the full-time tent-life, with the hope of inspiring (and hopefully not putting off) anyone who wants to trial living with less.
 				<br>
@@ -109,10 +136,8 @@
 				I think most seasoned campers are prepared for this one. It’s not always cold or wet, either. Sometimes, the sun shines and you have a stress-free day of swimming in the sea. That said, make sure you’re always ready for the worst of the wildlife (sandflies), or weather at any moment (see ‘Invest in a good mallet’ below for more details).
 				<br>
 				<br>
-				<img src="\images\blogpost1\duck_pets.jpg" style="width: 300px; height: 300px;"/>
-				</h3>
+				<h1><img src="\images\blogpost1\duck_pets.jpg" style="width: 300px; height: 300px;"/></h1>
 				<h4>Pro tip: ducks help keep the local bug population down...</h4>
-				<h3>
 				<b>You won’t be without basic amenities</b>
 				<br>
 				<br>
@@ -131,7 +156,7 @@
 				…or just any mallet, actually. When we first started out, we naively thought that stamping our tent pegs into the ground with the end of our flip-flop would suffice. Then this happened...
 				<br>
 				<br>
-				<img src="\images\blogpost1\tent.gif" style="width: 350px"/>
+				<h1><img src="\images\blogpost1\tent.gif" style="width: 350px"/></h1>
 				<br>
 				What ensued can only be described as 'mass panic' as we both clung onto a storm strap whilst being pelted with rain. So, all I can say is, spend an extra fiver at your local hardware store and invest in a mallet to bash your tent pegs in properly. Also, keep an eye on the weather, which can change in an instant (it was blazing sunshine 10 minutes before this storm hit!).
 				<br>
@@ -158,7 +183,6 @@
 				<br>
 				<br>
 				<img src="\images\blogpost1\sunset.jpg"/>
-				</h3>
 	</div>
 
 	<div class="container">
