@@ -2,97 +2,126 @@
 <html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cedarville%20Cursive">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT%20Serif">
-<title>🍉 somewherebythesea</title>
-	<style>
-		h1 {font-family: "PT Serif", serif; font-size: 25px; text-align: left; text-decoration: none;}
-		h2 {font-family: "Arial", sans-serif; font-size: 10px; text-align: left; letter-spacing: 3px;}
-		h3 {font-family: "PT Serif", serif; font-size: 16px; text-align: left; text-decoration: none}
-		h4 {font-family: "Cedarville Cursive", sans-serif; font-size: 20px; text-align: center;}
-		h5 {font-family: "Arial", sans-serif; font-size: 12px; text-align: center; letter-spacing: 1px;}
-		body {font-family: "PT Serif", serif; font-size: 15px; text-align: center; text-decoration: none;}
-		.w3-bar-block .w3-bar-item {padding:20px; text-decoration: none;}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>somewherebythesea 🌊</title>
+</head>
+<style>
+* {
+  box-sizing: border-box;
+}
 
-		.navbar {
-		  z-index: 9999;
-		  background-color: #333;
-		  position: fixed;
-		  top: 0;
-		  width: 100%;
-		}
+ul {
+  font-family: "Heebo";
+  font-size: 15px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
 
-		.navbar a {
-		  float: right;
-		  display: block;
-		  color: #fff;
-		  text-align: center;
-		  padding: 5px 13px;
-		  text-decoration: none;
-		  font-size: 15px;
-		}
-		
-		a:hover {
-		  color: #ffb8b8;
-		}
+li {
+  float: right;
+}
 
-		.navbar a:hover {
-		  background: #ffb8b8;
-		  color: #fff;
-		}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 6px 15px;
+  text-decoration: none;
+}
 
-		.container {
-		  position: relative;
-		  text-align: center;
-		  text-decoration: none;
-		  padding-left: 220px;
-		  padding-right: 220px;
-		}
-		
-		img {
-		display: block;
-		  margin-left: auto;
-		  margin-right: auto;
-		  width: 100%;
-		}
+li a:hover {
+  background-color: #b8d4d6;
+}
 
-		@media screen and (max-width: 1024px) {
-		.container {flex-direction: column; padding-left: 80px; padding-right: 80px;}
-		}
+.banner {
+ position: static;
+ padding-top: 20px;
+ margin: 0;
+ width: 100%;
+}
 
-		@media screen and (max-width: 600px) {
-		.container {flex-direction: column; padding-left: 30px; padding-right: 30px;}
-		.navbar a {font-size: 15px;}
-		h1 {font-size: 25px;}
-		h2 {font-size: 13px;}
-		h3 {font-size: 16px;}
-		h4 {font-size: 20px;}
-		h5 {font-size: 13px;}
-		body {font-size: 18px;}
-		}
-	</style>
+.fa {
+  padding: 12px;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  border-radius: 100%;
+  background: #b8d4d6;
+}
+
+.fa:hover {
+  opacity: 0.6;
+  }
+
+/* FONTS */
+h1 {font-family: "Heebo"; font-weight: 100; font-size: 20px; text-align: center; letter-spacing: 3px;} /*recent posts*/
+h2 {font-family: "PT Serif", serif; font-weight: normal; font-size: 18px; text-align: left; text-decoration: none} /*post title*/
+h3 {font-family: "Heebo"; font-weight: 100; font-size: 12px; text-align: center; letter-spacing: 1px;} /*footer*/
+h4 {font-family: "Heebo"; font-weight: 100; font-size: 9px; text-align: left; letter-spacing: 1px;} /*date time*/
+
+body {
+  background-color: #ffffff;
+  padding: 0px;
+  font-family: "PT Serif";
+  font-size: 15px;
+  text-decoration: none;
+  text-align: left;
+}
+
+/* Center website */
+.main {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 20px;
+  padding-left: 220px;
+  padding-right: 220px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .main {padding: 10px;}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .main {padding: 10px;}
+	h1 {font-size: 18px;}
+	h2 {font-size: 19px;}
+	h3 {font-size: 13px;}
+	h4 (font-size: 15px;}
+	body {font-size: 15px;}
+  }
+</style>
 
 <!-- NavBar -->
-
-	<div class="navbar">
-	  <a href="/index">Misc</a>
-	  <a href="/crafts">Crafts</a>
-	  <a href="/travel">Travel</a>
-	  <a href="/recipes">Recipes</a>
-	  <a href="/about">About</a>
-	  <a href="/index">Home</a>
-	</div>
+<ul>
+  <li><a href="\contact.html">Contact</a></li>
+  <li><a href="\about2.html">About</a></li>
+  <li><a href="\index.html">Home</a></li>
+</ul>
 	
 <!-- Page Content -->
 	<div class="container">
 	<br>
-	<br>
-		<h1>Embroidery for absolute beginners</h1>
-		<h2>06/04/2020 19:12<h2>
-		<img src="\images\blogpost2\banner.jpg"/>
-			<h3>Ah Embroidery. It has a certain stigma to it, doesn’t it. I wondered whilst writing this whether embarking on an embroidery project would make people think I’ve turned into a Nana.
+		<h2>Embroidery for absolute beginners</h2>
+		<h4>06/04/2020 19:12</h4>
+		<img src="\images\blogpost2\banner.jpg" style="width: 100%"/>
+			Ah Embroidery. It has a certain stigma to it, doesn’t it. I wondered whilst writing this whether embarking on an embroidery project would make people think I’ve turned into a Nana.
 				<br>
 				<br>
 				Well, as it happens, my Nana is pretty cool, so, who cares?
@@ -101,7 +130,7 @@
 				I’m going to show you how to make a cute embroidered hoop to brighten up your room. You could even give it as a gift to show your friend how cool your new hobby is. It’s incredibly easy to do, albeit a little time consuming. So, set aside a few hours, make yourself a cup of tea and have your favourite playlist at the ready.
 				<br>
 				<br>
-				<img src="\images\blogpost2\prep.jpg"/>
+				<img src="\images\blogpost2\prep.jpg" style="width:100%"/>
 				<br>
 				<b>You will need:</b>
 				<br>•	Embroidery Hoop (5 inch diameter)
@@ -122,7 +151,7 @@
 				Step 3. Position your AIDA cloth over the larger part of the hoop. Insert the centre hoop inside so that it traps the AIDA cloth. Make sure that the AIDA grid lines up parallel with the top of the hoop, like this:
 				<br>
 				<br>
-				<img src="\images\blogpost2\AIDA.jpg" style="width:350px; height:250px"/>
+				<h1><img src="\images\blogpost2\AIDA.jpg" style="width:350px; height:250px"/></h1>
 				<br>
 				Use the screw at the top to tighten the outer part of the hoop. Pull the AIDA cloth taught if you need to, to straighten out any wrinkles.
 				<br>
@@ -130,7 +159,7 @@
 				Step 4. You can draw your design straight onto the AIDA cloth if you wish. I decided to draw mine in my sketchbook first. You are more than welcome to use it:
 				<br>
 				<br>
-				<img src="\images\blogpost2\sketch.jpg" style="width:350px; height:310px"/>
+				<h1><img src="\images\blogpost2\sketch.jpg" style="width:300px; height:310px"/></h1>
 				<br>
 				Step 5. For the embroidering, it is easier to do the larger sections of your design first. Cut a length of thread approx. 50cm in length. Notice that the thread is made up of 6 individual strands. Separate the thread into 2 lengths, each containing 3 strands.
 				<br>
@@ -141,7 +170,7 @@
 				Step 7. Start at one of the edges from the back of the hoop and make your first stitch. Make sure your stitches are in straight, vertical lines that line up roughly with the AIDA grid. I also found that I had to go in between the AIDA grid squares to ensure I covered the entire area with thread.
 				<br>
 				<br>
-				<img src="\images\blogpost2\progress.jpg"/>
+				<img src="\images\blogpost2\progress.jpg"  style="width:100%"/>
 				<br>
 				Step 8. Continue threading until you have completed all the colours. For the plants, I decided to change the angle of my threading to make them stand out. I also did this for the window frames to make the ‘wood’ look more realistic.
 				<br>
@@ -152,7 +181,7 @@
 				Voila!
 				<br>
 				<br>
-				<img src="\images\blogpost2\hoop.jpg"/>
+				<img src="\images\blogpost2\hoop.jpg"  style="width:100%"/>
 				<br>
 				Note that you don’t have to use AIDA cloth, you can use just about any kind of fabric you want. However, as it was my first time, I found it quite handy having the grid lines to follow.
 				<br>
@@ -161,16 +190,14 @@
 				<br>
 				<br>
 				I hope you enjoyed this tutorial and I hope to see lots of freshly embroidered decorations hanging in windows everywhere.
-				</h3>
 	</div>
-
-	<div class="container">
-		<br>
-		<a href="https://instagram.com/chloemitch_/" class="fa fa-instagram" style="font-size:22px; text-decoration: none;"></a> 
-		<!--&nbsp;|&nbsp;
-		<a href="/comingsoon" style="font-size:20px; font-family:times new roman; text-decoration: none">Etsy.</a>-->
-		<br>
-		<h5>Theme: <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
-		<br> &copy; Chloe Mitchell 2020</h5>
-	</div>
+	
+<!-- Footer -->
+<!--&nbsp;|&nbsp;
+<a href="/comingsoon" style="font-size:20px; font-family:times new roman; text-decoration: none">Etsy.</a>-->
+<h3>
+<a href="https://instagram.com/chloemitch_/" class="fa fa-instagram"></a>
+<br />
+<br/ >Theme: <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+<br /> &copy; Chloe Mitchell 2020</h3>
 </html>
