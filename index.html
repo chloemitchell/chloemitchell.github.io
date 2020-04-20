@@ -76,7 +76,6 @@ body {
   font-family: "PT Serif";
   font-size: 15px;
   text-decoration: none;
-  text-overflow: ellipsis;
 }
 
 .img a:hover {
@@ -104,6 +103,7 @@ body {
 .column {
   float: left;
   width: 25%;
+  text-overflow: ellipsis;
   display: none; /* Hide all elements by default */
 }
 
@@ -122,9 +122,10 @@ body {
 .content {
   background-color: #f7f7f7;
   padding: 8px;
-  height: 420px;
+  width: auto;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /* The "show" class is added to the filtered elements */
