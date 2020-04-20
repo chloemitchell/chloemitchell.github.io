@@ -1,6 +1,161 @@
 <!DOCTYPE html>
 <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT%20Serif">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 <style>
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  font-family: "Heebo";
+  font-size: 15px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8px 15px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #b8d4d6;
+}
+
+.banner {
+ width: 100%;
+ padding: 0;
+ margin: 0;
+ top: 0;
+ left: 0;
+}
+
+.fa {
+  padding: 12px;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  border-radius: 100%;
+  background: #b8d4d6;
+}
+
+.fa:hover {
+  opacity: 0.6;
+  }
+
+/* FONTS */
+h1 {font-family: "Heebo"; font-weight: 100; font-size: 20px; text-align: center; letter-spacing: 3px;} /*recent posts*/
+h2 {font-family: "PT Serif", serif; font-weight: normal; font-size: 18px; text-align: left; text-decoration: none} /*post title*/
+h3 {font-family: "Heebo"; font-weight: 100; font-size: 12px; text-align: center; letter-spacing: 1px;} /*footer*/
+
+body {
+  background-color: #ffffff;
+  padding: 20px;
+  font-family: "PT Serif";
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.img a:hover {
+  opacity: 0.8 
+}
+
+/* Center website */
+.main {
+  max-width: 1400px;
+  margin: 0;
+}
+
+.row {
+  margin: 2px 0px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: #f7f7f7;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+font-family: "Heebo";
+font-size: 15px;
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #f7f7f7;
+}
+
+.btn.active {
+  background-color: #b8d4d6;
+  color: white;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #b8d4d6; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 100%; /* Rounded corners */
+  font-size: 22px; /* Increase font size */
+}
+
+#myBtn:hover {
+  opacity: 0.6;
+}
+
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
@@ -24,13 +179,6 @@
 	body {font-size: 16px;}
   }
 </style>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT%20Serif">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="/style.css">
-</head>
 <body>
 
 <!-- MAIN (Center website) -->
