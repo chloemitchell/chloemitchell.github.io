@@ -78,8 +78,8 @@ body {
 
 /* Center website */
 .main {
-  max-width: 1000px;
-  margin: auto;
+  max-width: 1400px;
+  margin: 0;
 }
 
 .row {
