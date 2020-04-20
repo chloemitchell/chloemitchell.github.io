@@ -59,7 +59,7 @@ li a:hover {
 
 /* FONTS */
 h1 {font-family: "Heebo"; font-weight: 100; font-size: 20px; text-align: center; letter-spacing: 3px;} /*recent posts*/
-h2 {font-family: "PT Serif", serif; font-weight: normal; font-size: 18px; text-align: left; text-decoration: none} /*post title*/
+h2 {font-family: "PT Serif", serif; font-weight: normal; text-decoration: none; font-size: 18px; text-align: left; text-decoration: none} /*post title*/
 h3 {font-family: "Heebo"; font-weight: 100; font-size: 12px; text-align: center; letter-spacing: 1px;} /*footer*/
 
 body {
